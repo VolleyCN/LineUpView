@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/match_line_up_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_46"
+                android:layout_margin="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:minWidth="@dimen/dp_80"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp_8"
+                android:paddingVertical="@dimen/dp_7">
+
+                <TextView
+                    android:id="@+id/match_home_team_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_11"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/match_home_lineup_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_11"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <com.volleycn.lineupview.LineUpView
+                android:id="@+id/match_home_lineup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_355"
+                android:layout_margin="@dimen/dp_10" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.volleycn.lineupview.LineUpView
+                android:id="@+id/match_away_lineup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_355"
+                android:layout_margin="@dimen/dp_10" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_46"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/dp_8"
+                android:gravity="center_vertical"
+                android:minWidth="@dimen/dp_80"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dp_8"
+                android:paddingVertical="@dimen/dp_7">
+
+                <TextView
+                    android:id="@+id/match_away_team_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_11"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/match_away_lineup_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_2"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_11"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>
